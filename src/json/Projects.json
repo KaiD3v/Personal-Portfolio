@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Projeto A",
+    "image": "https://example.com/project_a_image.jpg",
+    "text": "Descrição do Projeto A."
+  },
+  {
+    "id": 2,
+    "title": "Projeto B",
+    "image": "https://example.com/project_b_image.jpg",
+    "text": "Descrição do Projeto B."
+  },
+  {
+    "id": 3,
+    "title": "Projeto C",
+    "image": "https://example.com/project_c_image.jpg",
+    "text": "Descrição do Projeto C."
+  }
+]
