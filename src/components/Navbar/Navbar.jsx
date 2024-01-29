@@ -13,11 +13,11 @@ const Navbar = () => {
           <NavLink className={({isActive}) => (isActive ? styles.active : '')} to={"/skills"}>Skills</NavLink>
         </li>
         <li>
-          <NavLink className={({isActive}) => (isActive ? styles.active : '')} to={'/projects'}>Projetos</NavLink>
+          <NavLink className={({isActive}) => (isActive ? styles.active : '')} to={'/projects'}>Projects</NavLink>
           
         </li>
         <li>
-          <NavLink className={({isActive}) => (isActive ? styles.active : '')} to={"/about"}>Sobre</NavLink>
+          <NavLink className={({isActive}) => (isActive ? styles.active : '')} to={"/about"}>About</NavLink>
         </li>
       </ul>
     </nav>
