@@ -1,0 +1,51 @@
+.home_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    font-size: large;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  
+  .home_container h1 {
+    font-size: 4em;
+  }
+  
+  .home_about_me {
+    margin: 3rem;
+  }
+  
+  .tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel button {
+    vertical-align: middle;
+    background: none;
+    border: none;
+    padding: .5rem;
+    color: #ffff;
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .home_container {
+      flex-direction: column;
+      padding-top: 10em;
+    }
+  
+    .home_container h1 {
+      font-size: 2.5em;
+    }
+  }
+  
