@@ -7,6 +7,8 @@ const Home = () => {
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/css.svg",
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/js.png",
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/react.svg",
+    "https://static-00.iconduck.com/assets.00/nodejs-icon-2048x2048-rueyo8fw.png",
+    "https://assets.stickpng.com/images/62cdcc97e106734e1ce200a9.png",
   ];
 
   const nextImage = () => {
@@ -66,13 +68,13 @@ const Home = () => {
       </div>
       <div className={styles.tecnologias}>
         <div className={styles.carousel}>
-          <button onClick={prevImage}>&lt;</button>
+          <button className={styles.carousel_btn} onClick={prevImage}>&lt;</button>
           <img
             src={images[currentIndex]}
             alt={`Imagem ${currentIndex + 1}`}
-            style={{ width: "10rem", height: "10rem" }}
+            style={{ width: "10rem", height: "10rem", margin: '10px' }}
           />
-          <button onClick={nextImage}>&gt;</button>
+          <button className={styles.carousel_btn} onClick={nextImage}>&gt;</button>
         </div>
       </div>
     </div>

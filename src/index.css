@@ -3,6 +3,9 @@ body{
   color: #faf8f8;
   padding: 0;
   margin: 0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   font-family: "Lato", sans-serif;
 }
   

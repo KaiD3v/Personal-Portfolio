@@ -2,21 +2,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    font-size: large;
+    text-align: initial;
+    height: 80vh;
     max-width: 1080px;
     margin: 0 auto;
-    padding-top: 60px;
+  }
+
+  .carousel_btn {
+    font-size: larger; 
+    padding: 5px 10px; 
+    border: 2px solid #ffffff; 
+    cursor: pointer; 
+    margin: 1rem;
+    transition: ease-in-out .3s;
+  }
+  
+  .carousel_btn:hover {
+    background-color: #ffffff; 
+    color: #000000; 
   }
   
   .home_container h1 {
     font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+  }
+
+  .home_container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #a09c9c;
   }
   
   .home_about_me {
-    margin: 3rem;
+    margin: 1rem;
+
   }
-  
+
   .tecnologias {
     display: flex;
     flex-direction: column;
@@ -38,14 +61,10 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .home_container {
       flex-direction: column;
-      padding-top: 10em;
-    }
-  
-    .home_container h1 {
-      font-size: 2.5em;
+      margin: 0 auto ;
     }
   }
   
