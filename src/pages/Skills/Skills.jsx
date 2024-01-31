@@ -16,15 +16,17 @@ const Skills = () => {
   }
 
   return (
-    <div>
-        <h1>Skills</h1>
+    <div className={styles.skills_container}>
+
+        <div className={styles.skills_align_container}>
         {skills.map((skill) => (
-          <div key={skill.id}>
-            <img src={skill.img} alt={skill.title} />
+          <div className={styles.skills_cards} key={skill.id}>
             <h3>{skill.title}</h3>
+            <img src={skill.img} alt={skill.title} />
             <p>{skill.desc}</p>
           </div>
         ))}
+        </div>
     </div>
   )
 }

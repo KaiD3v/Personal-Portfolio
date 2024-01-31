@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "title": "skill1",
-    "desc": "descrição da skill 1.",
-    "img": "url"
+    "title": "Javascript",
+    "desc": "Javascript é pika.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
   },
   {
     "id": 2,
-    "title": "skill2",
-    "desc": "descrição da skill 2.",
-    "img": "url"
+    "title": "ReactJS",
+    "desc": "React é dahora.",
+    "img": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png"
   },
   {
     "id": 3,
-    "title": "skill3",
-    "desc": "descrição da skill 3.",
-    "img": "url"
+    "title": "NodeJS",
+    "desc": "Node é foda...",
+    "img": "https://www.stickersdevs.com.br/wp-content/uploads/2022/01/nodejs-logo-adesivo-sticker.png"
   },
   {
     "id": 4,
-    "title": "skill3",
-    "desc": "descrição da skill 4.",
-    "img": "url"
+    "title": "PostgreSQL",
+    "desc": "Melhor banco SQL.",
+    "img": "https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"
   }
 ]
