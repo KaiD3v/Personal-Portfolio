@@ -1,6 +1,6 @@
 import styles from "./Projects.module.css";
 import projectsData from "../../json/Projects.json";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Projects = () => {
   const [loading, setLoading] = useState(false);

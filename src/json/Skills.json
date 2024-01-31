@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "skill1",
+    "desc": "descrição da skill 1.",
+    "img": "url"
+  },
+  {
+    "id": 2,
+    "title": "skill2",
+    "desc": "descrição da skill 2.",
+    "img": "url"
+  },
+  {
+    "id": 3,
+    "title": "skill3",
+    "desc": "descrição da skill 3.",
+    "img": "url"
+  },
+  {
+    "id": 4,
+    "title": "skill3",
+    "desc": "descrição da skill 4.",
+    "img": "url"
+  }
+]
