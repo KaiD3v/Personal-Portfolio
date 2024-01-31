@@ -8,7 +8,7 @@ const Home = () => {
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/js.png",
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/react.svg",
     "https://static-00.iconduck.com/assets.00/nodejs-icon-2048x2048-rueyo8fw.png",
-    "https://assets.stickpng.com/images/62cdcc97e106734e1ce200a9.png",
+    "https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"
   ];
 
   const nextImage = () => {

@@ -16,14 +16,17 @@ const Projects = () => {
   }
 
   return (
-    <div>
+    <div className={styles.projects_container}>
+
+      <div className={styles.cards_align_container}>
       {projectsData.map((project) => (
-        <div key={project.id}>
-          <img src={project.image} alt={project.title} />
+        <div className={styles.projects_cards} key={project.id}>
           <h3>{project.title}</h3>
-          <p>{project.text}</p>
+          <img src={project.image} alt={project.title} />
+          <p>{project.desc}</p>
         </div>
       ))}
+    </div>
     </div>
   );
 };
