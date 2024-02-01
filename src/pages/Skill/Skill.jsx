@@ -39,9 +39,11 @@ const Skill = () => {
   }
 
   return (
-    <div>
+    <div className={styles.skill_container}>
+      <main className={styles.main}>
       <h1>{skill.title}</h1>
       <p>{skill.text}</p>
+      </main>
     </div>
   );
 };
