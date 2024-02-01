@@ -41,11 +41,18 @@ const Skill = () => {
   return (
     <div className={styles.skill_container}>
       <main className={styles.main}>
-      <h1>{skill.title}</h1>
-      <p>{skill.text}</p>
+        <h1>{skill.title}</h1>
+        <p>{skill.text}</p>
+        <h3>Features:</h3>
+        <ul>
+          {skill.features.map((feature, index) => (
+            <li key={index}>- {feature}</li>
+          ))}
+        </ul>
       </main>
     </div>
   );
+  
 };
 
 export default Skill;

@@ -1,30 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Javascript",
-    "desc": "Javascript é pika.",
+    "title": "JavaScript",
+    "desc": "JavaScript é pika.",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-    "text": "Technology Text"
+    "text": "JavaScript é uma linguagem de programação de alto nível, dinâmica e orientada a objetos amplamente utilizada para desenvolvimento web. Criada por Brendan Eich em 1995, tornou-se a linguagem de scripting padrão em navegadores web, permitindo interatividade dinâmica nas páginas.",
+    "features": [
+      "Execução no lado do cliente (navegadores)",
+      "Suporte a programação assíncrona",
+      "Ampla utilização em desenvolvimento web"
+    ]
   },
   {
     "id": 2,
     "title": "ReactJS",
     "desc": "React é dahora.",
     "img": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png",
-    "text": "Technology Text"
+    "text": "ReactJS é uma biblioteca JavaScript declarativa, eficiente e flexível para a criação de interfaces de usuário. Desenvolvida pelo Facebook, o React permite a construção de componentes reutilizáveis, facilitando a manutenção e o desenvolvimento de aplicações web modernas.",
+    "features": [
+      "Desenvolvimento baseado em componentes",
+      "Reconciliação eficiente do DOM",
+      "Gestão de estado simplificada"
+    ]
   },
   {
     "id": 3,
     "title": "NodeJS",
     "desc": "Node é foda...",
     "img": "https://www.stickersdevs.com.br/wp-content/uploads/2022/01/nodejs-logo-adesivo-sticker.png",
-    "text": "Technology Text"
+    "text": "Node.js é um ambiente de execução JavaScript do lado do servidor. Baseado na engine V8 do Google Chrome, o Node.js permite a execução de código JavaScript fora do navegador. Sua arquitetura orientada a eventos e não bloqueante torna-o adequado para aplicações escaláveis e assíncronas.",
+    "features": [
+      "Desenvolvimento de aplicações servidor",
+      "Gestão eficiente de operações assíncronas",
+      "Ecossistema robusto de pacotes (npm)"
+    ]
   },
   {
     "id": 4,
     "title": "PostgreSQL",
     "desc": "Melhor banco SQL.",
     "img": "https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png",
-    "text": "Technology Text"
+    "text": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Conhecido por sua confiabilidade e recursos avançados, o PostgreSQL suporta consultas complexas, transações ACID e extensibilidade. É uma escolha popular para aplicações que exigem robustez e conformidade com padrões SQL.",
+    "features": [
+      "Conformidade com padrões SQL",
+      "Suporte a transações ACID",
+      "Extensibilidade e customização avançada"
+    ]
   }
 ]
