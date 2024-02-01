@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 import projectsData from "../../json/Projects.json";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [loading, setLoading] = useState(false);
@@ -22,8 +23,10 @@ const Projects = () => {
       {projectsData.map((project) => (
         <div className={styles.projects_cards} key={project.id}>
           <h3>{project.title}</h3>
+          <Link to={`/project/${project.id}`}>
           <img src={project.image} alt={project.title} />
           <p>{project.desc}</p>
+          </Link>
         </div>
       ))}
     </div>
