@@ -1,7 +1,7 @@
 import styles from "./Skill.module.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import skills from '../../json/Skills.json';
+import skills from "../../json/Skills.json";
 
 const Skill = () => {
   const { id } = useParams();
@@ -13,10 +13,9 @@ const Skill = () => {
   useEffect(() => {
     const fetchSkill = async () => {
       try {
-
         setLoading(true);
 
-        const selectedSkill = skills.find(skill => skill.id == id);
+        const selectedSkill = skills.find((skill) => skill.id == id);
 
         // Atualizar o estado da skill
         setSkill(selectedSkill);
@@ -40,19 +39,22 @@ const Skill = () => {
 
   return (
     <div className={styles.skill_container}>
-      <main className={styles.main}>
+      <div className={styles.title_container}>
         <h1>{skill.title}</h1>
+      </div>
+      <div className={styles.text_container}>
         <p>{skill.text}</p>
+      </div>
+      <div className={styles.features_container}>
         <h3>Features:</h3>
         <ul>
           {skill.features.map((feature, index) => (
-            <li key={index}>- {feature}</li>
+            <li key={index}>{feature}</li>
           ))}
         </ul>
-      </main>
+      </div>
     </div>
   );
-  
 };
 
 export default Skill;
