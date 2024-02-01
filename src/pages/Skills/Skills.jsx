@@ -1,6 +1,7 @@
 import styles from './Skills.module.css'
 import skills from '../../json/Skills.json'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Skills = () => {
   const [loading, setLoading] = useState(false);
@@ -22,7 +23,9 @@ const Skills = () => {
         {skills.map((skill) => (
           <div className={styles.skills_cards} key={skill.id}>
             <h3>{skill.title}</h3>
+            <Link to={`/skill/${skill.id}`}>
             <img src={skill.img} alt={skill.title} />
+            </Link>
             <p>{skill.desc}</p>
           </div>
         ))}
