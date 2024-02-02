@@ -8,7 +8,7 @@ const Home = () => {
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/js.png",
     "https://riadhadrani.github.io/slick-portfolio-svelte/logos/react.svg",
     "https://static-00.iconduck.com/assets.00/nodejs-icon-2048x2048-rueyo8fw.png",
-    "https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"
+    "https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png",
   ];
 
   const nextImage = () => {
@@ -26,12 +26,14 @@ const Home = () => {
       <div className={styles.home_about_me}>
         <h1>Kaique Melo</h1>
         <p>
-          No ano de 2150, a humanidade se encontra em um novo capítulo de sua
-          jornada cósmica. Naves espaciais avançadas, impulsionadas por
-          tecnologias revolucionárias de propulsão quântica, cortam o vasto
-          vácuo interplanetário em busca de descobertas além da nossa
-          compreensão atual. As fronteiras do cosmos se desdobram diante dos
-          olhos curiosos dos astronautas do século XXII.
+          Olá mundo! Meu nome é Kaique, e sou um entusiasta da tecnologia, atualmente
+          focado em aprimorar minhas habilidades na área de Análise e
+          Desenvolvimento de sistemas. Minha verdadeira paixão reside no vasto universo do
+          desenvolvimento web fullstack. Estou comprometido em explorar e
+          dominar as complexidades dessa área, sempre buscando inovação
+          e excelência. Através do meu percurso acadêmico e prático, busco
+          contribuir significativamente para o cenário tecnológico,
+          transformando desafios em oportunidades de aprendizado e crescimento.
         </p>
         <a href="https://github.com/KaiD3v">
           <svg
@@ -47,34 +49,38 @@ const Home = () => {
           </svg>
         </a>
         <a href="https://www.linkedin.com/in/kaique-ricardo-de-melo-98969b256/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="30"
-          height="20"
-          viewBox="0 0 48 48"
-        >
-          <path
-            fill="#0288D1"
-            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
-          ></path>
-          <path
-            fill="#FFF"
-            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
-          ></path>
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="20"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#0288D1"
+              d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+            ></path>
+            <path
+              fill="#FFF"
+              d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
+            ></path>
+          </svg>
         </a>
       </div>
       <div className={styles.tecnologias}>
         <div className={styles.carousel}>
-          <button className={styles.carousel_btn} onClick={prevImage}>&lt;</button>
+          <button className={styles.carousel_btn} onClick={prevImage}>
+            &lt;
+          </button>
           <img
             src={images[currentIndex]}
             alt={`Imagem ${currentIndex + 1}`}
-            style={{ width: "10rem", height: "10rem", margin: '10px' }}
+            style={{ width: "10rem", height: "10rem", margin: "10px" }}
           />
-          <button className={styles.carousel_btn} onClick={nextImage}>&gt;</button>
+          <button className={styles.carousel_btn} onClick={nextImage}>
+            &gt;
+          </button>
         </div>
       </div>
     </div>

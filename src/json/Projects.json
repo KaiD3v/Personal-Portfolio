@@ -6,7 +6,7 @@
     "desc": "Coming soon...",
     "content": "Coming soon...",
     "date": "",
-    "links": ["docs", "projeto"]
+    "links": ["...", "..."]
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "desc": "Coming soon...",
     "content": "Coming soon...",
     "date": "",
-    "links": ["docs", "projeto"]
+    "links": ["...", "..."]
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "image": "https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif",
     "desc": "Coming soon...",
     "content": "conteúdo do post sobre o projeto",
-    "date": "data de término e início",
-    "links": ["docs", "projeto"]
+    "date": "",
+    "links": ["...", "..."]
   },
   {
     "id": 4,
@@ -32,7 +32,7 @@
     "image": "https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif",
     "desc": "Coming soon...",
     "content": "conteúdo do post sobre o projeto",
-    "date": "data de término e início",
-    "links": ["docs", "projeto"]
+    "date": "",
+    "links": ["...", "..."]
   }
 ]
