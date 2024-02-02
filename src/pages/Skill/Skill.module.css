@@ -23,7 +23,7 @@
 .text_container{
     border-bottom: 1px solid  #a09c9c;
     padding: 3rem 0;
-    text-align: center;
+    text-align: initial;
     width: 75%;
 }
 
