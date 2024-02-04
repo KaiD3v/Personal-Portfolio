@@ -1,11 +1,11 @@
 .navbar_container {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
-  background-color: #020202;
+  background-color: #0f0e0e;
   justify-content: center;
   align-items: center;
   padding: 0;
-  border-bottom: 1.5px solid #131313;
+  border-bottom: 1.5px solid #292626;
   margin: 0 auto;
 }
 
