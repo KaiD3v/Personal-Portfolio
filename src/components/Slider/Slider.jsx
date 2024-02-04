@@ -45,7 +45,7 @@ const Slider = () => {
             }} // Posição inicial fora da tela
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: currentIndex % 2 === 0 ? "100%" : "-100%" }}
-            transition={{ duration: 0.75, ease: "easeInOut" }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
           />
         </AnimatePresence>
       </div>
