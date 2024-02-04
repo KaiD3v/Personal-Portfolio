@@ -1,0 +1,35 @@
+.carousel_btn {
+  font-size: larger;
+  padding: 5px 10px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.carousel_btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  width: 12rem;
+}
+
+.carouselContainer button {
+  vertical-align: middle;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  color: #ffff;
+  width: 20px;
+  cursor: pointer;
+}
