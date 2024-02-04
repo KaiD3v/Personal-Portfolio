@@ -2,6 +2,7 @@ import styles from "./Skill.module.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import skills from "../../json/Skills.json";
+import { motion as m } from "framer-motion";
 
 const Skill = () => {
   const { id } = useParams();
@@ -38,7 +39,12 @@ const Skill = () => {
   }
 
   return (
-    <div className={styles.skill_container}>
+    <m.div
+      className={styles.skill_container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
+    >
       <div className={styles.title_container}>
         <h1>{skill.title}</h1>
       </div>
@@ -53,7 +59,7 @@ const Skill = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </m.div>
   );
 };
 

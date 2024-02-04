@@ -3,6 +3,7 @@ import styles from "./Project.module.css";
 import projects from "../../json/Projects.json";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { motion as m } from "framer-motion";
 
 const Project = () => {
   const { id } = useParams();
@@ -39,22 +40,31 @@ const Project = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <m.div
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
+    >
       <div className={styles.title_container}>
         <h1 className={styles.title}>{project.title}</h1>
         <h6>{project.date}</h6>
       </div>
       <div className={styles.links_container}>
         <ul>
-          <li className={styles.list}>{project.links.map((link, i) => (
-            <a href=""><li key={project.i}>{link}</li></a>
-          ))}</li>
+          <li className={styles.list}>
+            {project.links.map((link, i) => (
+              <a href="">
+                <li key={project.i}>{link}</li>
+              </a>
+            ))}
+          </li>
         </ul>
       </div>
       <div className={styles.content_container}>
         <p>{project.content}</p>
       </div>
-    </div>
+    </m.div>
   );
 };
 

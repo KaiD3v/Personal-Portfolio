@@ -1,8 +1,14 @@
 import styles from "./About.module.css";
+import { motion as m } from "framer-motion";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <m.div
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
+    >
       <div className={styles.title_container}>
         <h1>Sobre Mim</h1>
       </div>
@@ -33,7 +39,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
