@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Home.module.css";
+import { motion as m } from "framer-motion";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,17 +23,22 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.home_container}>
+    <m.div
+      className={styles.home_container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
+    >
       <div className={styles.home_about_me}>
         <h1>Kaique Melo</h1>
         <p>
-          Olá mundo! Meu nome é Kaique, e sou um entusiasta da tecnologia, atualmente
-          focado em aprimorar minhas habilidades na área de Análise e
-          Desenvolvimento de sistemas. Minha verdadeira paixão reside no vasto universo do
-          desenvolvimento web fullstack. Estou comprometido em explorar e
-          dominar as complexidades dessa área, sempre buscando inovação
-          e excelência. Através do meu percurso acadêmico e prático, busco
-          contribuir significativamente para o cenário tecnológico,
+          Olá mundo! Meu nome é Kaique, e sou um entusiasta da tecnologia,
+          atualmente focado em aprimorar minhas habilidades na área de Análise e
+          Desenvolvimento de sistemas. Minha verdadeira paixão reside no vasto
+          universo do desenvolvimento web fullstack. Estou comprometido em
+          explorar e dominar as complexidades dessa área, sempre buscando
+          inovação e excelência. Através do meu percurso acadêmico e prático,
+          busco contribuir significativamente para o cenário tecnológico,
           transformando desafios em oportunidades de aprendizado e crescimento.
         </p>
         <a href="https://github.com/KaiD3v">
@@ -83,7 +89,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
