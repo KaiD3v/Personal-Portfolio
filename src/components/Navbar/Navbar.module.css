@@ -13,12 +13,6 @@ li {
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 475px) {
-    li{
-        margin: 0;
-    }
-}
-
 .brand {
   font-size: 1.2em;
 }
@@ -30,9 +24,6 @@ li {
 .links_list {
   display: flex;
   list-style: none;
-}
-
-.links_list {
   margin-right: 1em;
 }
 
@@ -43,4 +34,25 @@ li {
 .active {
   background-color: #ffffff;
   color: #000000;
+}
+
+.menu_btn{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    display: none;
+  }
+
+  nav {
+    justify-content: flex-start;
+  
+  }
+
+  .menu_btn {
+    display: block;
+    padding-left: 1rem;
+    margin-left: 9rem; 
+  }
 }
