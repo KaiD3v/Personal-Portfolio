@@ -11,14 +11,14 @@
   
   
   .home_container h1 {
-    font-size: 4em;
+    font-size: 4rem;
     font-family: "GFS Didot", serif;
     font-style: italic;
   }
 
   .home_container p {
     font-family: "GFS Didot", serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: italic;
     color: #a09c9c;
   }

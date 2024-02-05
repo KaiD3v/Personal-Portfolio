@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import HamburguerMenu from "./components/Menu/HamburguerMenu";
 import { ButtonProvider } from "./hooks/useMenuContext";
+import Footer from "./components/Footer/Footer";
 
 // Páginas
 import Home from "./pages/Home/Home";
@@ -29,6 +30,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path={"/skill/:id"} element={<Skill />} />
           </Routes>
+          <Footer />
         </Router>
       </ButtonProvider>
     </div>
