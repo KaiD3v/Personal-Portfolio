@@ -1,13 +1,13 @@
 import styles from "./Projects.module.css";
-import projectsData from "../../json/Projects.json";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 import { motion as m } from "framer-motion";
+import ProjectsCards from "../../components/ProjectsCards/ProjectsCards";
 
 const Projects = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [projects, setProjects] = useState();
 
   if (loading) {
     return <p>Loading...</p>;
@@ -28,17 +28,7 @@ const Projects = () => {
         ease: "easeInOut",
       }}
     >
-      <div className={styles.cards_align_container}>
-        {projectsData.map((project) => (
-          <div className={styles.projects_cards} key={project.id}>
-            <h3>{project.title}</h3>
-            <Link to={`/project/${project.id}`}>
-              <img src={project.image} alt={project.title} />
-              <p>{project.desc}</p>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <ProjectsCards />
     </m.div>
   );
 };

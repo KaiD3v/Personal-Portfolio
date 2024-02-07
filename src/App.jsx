@@ -16,6 +16,8 @@ import Skills from "./pages/Skills/Skills";
 import Skill from "./pages/Skill/Skill";
 
 function App() {
+
+  
   return (
     <div className="App">
       <ButtonProvider>
@@ -30,7 +32,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path={"/skill/:id"} element={<Skill />} />
           </Routes>
-
+          <Footer />
         </Router>
       </ButtonProvider>
     </div>
