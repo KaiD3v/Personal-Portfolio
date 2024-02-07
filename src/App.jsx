@@ -30,7 +30,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path={"/skill/:id"} element={<Skill />} />
           </Routes>
-          <Footer />
+
         </Router>
       </ButtonProvider>
     </div>
