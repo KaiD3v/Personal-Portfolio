@@ -3,10 +3,12 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
   background-color: #0f0e0e;
   justify-content: center;
+  position: relative;
   align-items: center;
-  padding: 0;
+  width: 100%;
   border-bottom: 1.5px solid #292626;
   margin: 0 auto;
+  z-index: 2;
 }
 
 li {
@@ -36,7 +38,7 @@ li {
   color: #000000;
 }
 
-.menu_btn{
+.menu_btn {
   display: none;
 }
 
@@ -47,18 +49,17 @@ li {
 
   nav {
     justify-content: flex-start;
-  
   }
 
   .menu_btn {
     display: block;
     padding-left: 1rem;
-    margin-left: 9rem; 
+    margin-left: 9rem;
   }
 }
 
 @media screen and (max-width: 375px) and (max-height: 815px) {
-  .menu_btn{
+  .menu_btn {
     padding: 0;
   }
 }
