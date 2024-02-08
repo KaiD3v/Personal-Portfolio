@@ -1,15 +1,13 @@
 import React from "react";
 import styles from "./HamburguerMenu.module.css";
 import { Link } from "react-router-dom";
-import { useButtonContext } from "../../hooks/useMenuContext";
 
-const HamburguerMenu = () => {
-  const { buttonActive } = useButtonContext();
+const HamburguerMenu = ({isActive}) => {
 
   return (
     <div
       className={styles.menu_container}
-      style={{ display: buttonActive ? "block" : "none" }}
+      style={{ display: isActive ? "block" : "none" }}
     >
       <div className={styles.links_container}>
         <Link to="/projects">Projetos</Link>

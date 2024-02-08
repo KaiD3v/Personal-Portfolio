@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Componentes
 import Navbar from "./components/Navbar/Navbar";
 import HamburguerMenu from "./components/Menu/HamburguerMenu";
-import { ButtonProvider } from "./hooks/useMenuContext";
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 
 // Páginas
 import Home from "./pages/Home/Home";
@@ -15,15 +15,15 @@ import Project from "./pages/Project/Project";
 import Skills from "./pages/Skills/Skills";
 import Skill from "./pages/Skill/Skill";
 
-function App() {
 
+function App() {
+  const [menuState, setMenuState] = useState(false)
   
   return (
     <div className="App">
-      <ButtonProvider>
         <Router>
-          <Navbar />
-          <HamburguerMenu />
+          <Navbar isActive={menuState} setMenuState={setMenuState}/>
+          <HamburguerMenu isActive={menuState}/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -34,7 +34,6 @@ function App() {
           </Routes>
           <Footer />
         </Router>
-      </ButtonProvider>
     </div>
   );
 }
