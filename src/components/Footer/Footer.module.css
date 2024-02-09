@@ -35,12 +35,12 @@
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   .footer_container {
     margin-top: 2rem ;
     position: relative;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
   }
 
   .title_container {
