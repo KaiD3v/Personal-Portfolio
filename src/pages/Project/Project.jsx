@@ -53,9 +53,10 @@ const Project = () => {
       <div className={styles.links_container}>
         <ul>
           <li className={styles.list}>
-            {project.links.map((link, i) => (
-              <a href="">
-                <li key={project.i}>{link}</li>
+            <h3>Project:</h3>
+            {project.links.map((link, index) => (
+              <a href={link}>
+                <li key={index}>{link}</li>
               </a>
             ))}
           </li>

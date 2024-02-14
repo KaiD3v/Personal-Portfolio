@@ -1,38 +1,23 @@
 [
   {
     "id": 1,
-    "title": "Coming soon...",
-    "image": "https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif",
-    "desc": "Coming soon...",
-    "content": "Coming soon...",
-    "date": "",
-    "links": ["", ""]
+    "title": "Expert Notes",
+    "image": "https://svg.template.creately.com/MIQyt1kde0t",
+    "desc": "Expert Notes é um projeto de notas de texto onde os usuários podem gravar notas de áudio que serão convertidas em texto.",
+    "content": "Expert Notes é uma aplicação front-end construída com ReactJS, TypeScript e Tailwind CSS. Também utiliza bibliotecas como RadixUI, Sonner, Lucide e date-fns.",
+    "date": "Projeto iniciado em 06/02/2024 e concluído em 08/02/2024",
+    "links": [
+      "https://expert-notes-theta.vercel.app",
+      "https://github.com/KaiD3v/Expert-Notes"
+    ]
   },
   {
     "id": 2,
-    "title": "Coming soon...",
-    "image": "https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif",
-    "desc": "Coming soon...",
-    "content": "Coming soon...",
-    "date": "",
-    "links": ["", ""]
-  },
-  {
-    "id": 3,
-    "title": "Coming soon...",
-    "image": "https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif",
-    "desc": "Coming soon...",
-    "content": "conteúdo do post sobre o projeto",
-    "date": "",
-    "links": ["", ""]
-  },
-  {
-    "id": 4,
-    "title": "Coming soon...",
-    "image": "https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif",
-    "desc": "Coming soon...",
-    "content": "conteúdo do post sobre o projeto",
-    "date": "",
-    "links": ["", ""]
+    "title": "The Blog API",
+    "image": "https://svg.template.creately.com/MIQyt1kde0t",
+    "desc": "Uma API para gerenciamento de usuários, autenticação e criação de posts para um blog.",
+    "content": "A API oferece endpoints para criar novos usuários, autenticar usuários, criar, atualizar, editar e excluir posts, e muito mais.",
+    "date": "Projeto iniciado em 12/02/2024 e segue em desenvolvimento.",
+    "links": ["https://github.com/KaiD3v/The-Blog-API"]
   }
 ]
