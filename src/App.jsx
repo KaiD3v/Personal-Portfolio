@@ -29,8 +29,8 @@ function App() {
             <Route path="/project/:id" element={<Project />} />
             <Route path="/skills" element={<Skills />} />
           </Routes>
-          <Footer />
         </Router>
+        <Footer />
     </div>
   );
 }
