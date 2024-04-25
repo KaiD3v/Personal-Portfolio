@@ -42,12 +42,11 @@ const SkillCards = () => {
             <Dialog.Description>{skill.desc}</Dialog.Description>
           </Dialog.Trigger>
           <Dialog.Content className={styles.dialog_content}>
-            
-              <h1>{skill.title}</h1>
-           
-            <Dialog.Description>
-              {skill.text}
-            </Dialog.Description>
+            <div className={styles.close_dialog_btn}>
+              <Dialog.Close>X</Dialog.Close>
+            </div>
+            <h1>{skill.title}</h1>
+            <Dialog.Description>{skill.text}</Dialog.Description>
             <h3>Features:</h3>
             <ul>
               {skill.features.map((feature, i) => (
@@ -59,7 +58,6 @@ const SkillCards = () => {
       ))}
     </div>
   );
-  
 };
 
 export default SkillCards;
